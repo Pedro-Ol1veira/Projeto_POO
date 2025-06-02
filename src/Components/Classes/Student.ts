@@ -1,4 +1,4 @@
-class Student {
+export default class Student {
     private materias: Array<String>;
     private matricula: string;
     private ac: string;
@@ -6,7 +6,7 @@ class Student {
     private semIng: string;
     private notaDoEnem: number;
 
-    constructor(materias: Array<String>, matricula: string, ac:string, curso: string, semIng: string, notaDoEnem: number) {
+    constructor(materias: Array<String> = [], matricula: string, ac:string, curso: string, semIng: string, notaDoEnem: number) {
         this.materias = materias;
         this.matricula = matricula;
         this.ac = ac;
