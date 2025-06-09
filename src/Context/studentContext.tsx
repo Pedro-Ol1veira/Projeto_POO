@@ -21,3 +21,11 @@ export function StudentProvider({ children }: IContextProps) {
         </StudentContext.Provider>
     )
 }
+
+export function useStudent() {
+  const context = useContext(StudentContext);
+  if (!context) {
+    throw new Error('O contexto deve ser setado');
+  }
+  return context;
+}
