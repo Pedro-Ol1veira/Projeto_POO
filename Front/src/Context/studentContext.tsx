@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
-import Student from "../Components/Classes/Student";
+import Student from "../Classes/Student";
 
 interface IStudentContext {
   student: Student | null;

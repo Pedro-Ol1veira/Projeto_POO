@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import style from "./RegisterStudent.module.css";
-import Student from "../Classes/Student";
+import Student from "../../Classes/Student";
 import { useStudent } from "../../Context/studentContext";
 
 export default function RegisterStudent() {

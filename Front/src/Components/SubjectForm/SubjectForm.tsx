@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './SubjectForm.module.css';
 import { useStudent } from '../../Context/studentContext';
-import Subject from '../Classes/Subject';
+import Subject from '../../Classes/Subject';
 
 interface IProps {
   onSuccess: () => void;
