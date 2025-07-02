@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './SubjectForm.module.css';
 import { useStudent } from '../../Context/studentContext';
+import Subject from '../Classes/Subject';
 
 interface IProps {
   onSuccess: () => void;
@@ -17,7 +18,9 @@ export default function SubjectForm ({ onSuccess }: IProps) {
   
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    const newMateria = new Subject(code, name, dates, time);
+    student?.cadastrarMateria(newMateria);
+    
     console.log(student);
     onSuccess();
   }

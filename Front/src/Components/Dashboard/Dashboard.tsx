@@ -2,7 +2,7 @@ import { useState } from "react";
 import SubjectForm from "../SubjectForm/SubjectForm";
 import styles from './Dashboard.module.css';
 import { useStudent } from "../../Context/studentContext";
-import type Subject from "../Classes/Subject";
+import type Subject from "../Classes/Subject.ts";
 
 
 export default function Dashboard () {
