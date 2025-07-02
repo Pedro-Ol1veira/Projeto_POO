@@ -34,7 +34,7 @@ export default function Dashboard () {
       )}
 
       {student && student.getMaterias().map((subject: Subject) => (
-        <div key={subject.getId()}>
+        <div key={subject.getId()} className={styles.subject_card}>
           <p>{subject.getCodigo()}</p>
           <p>{subject.getNome()}</p>
           <p>{subject.getDias()}</p>
